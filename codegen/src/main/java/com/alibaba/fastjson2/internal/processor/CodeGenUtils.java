@@ -6,7 +6,7 @@ import com.alibaba.fastjson2.util.IOUtils;
 public class CodeGenUtils {
     static final String[] fieldItemObjectReader = new String[1024];
 
-    public static Class getSupperClass(int fieldReaders) {
+    public static Class getSuperClass(int fieldReaders) {
         Class objectReaderSuper;
         switch (fieldReaders) {
             case 1:

@@ -112,7 +112,7 @@ public class JSONCompiledAnnotationProcessor
 
         List<AttributeInfo> fields = si.getReaderAttributes();
 
-        Class supperClass = CodeGenUtils.getSupperClass(fields.size());
+        Class supperClass = CodeGenUtils.getSuperClass(fields.size());
         ClassWriter cw = new ClassWriter(packageName, generateClassName, supperClass, new Class[0]);
 
         final boolean generatedFields = fields.size() < 128;
